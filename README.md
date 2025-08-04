@@ -1,79 +1,80 @@
+# App Subscription Revenue Prediction (Ridge Regression)
 
-# App Subscription Revenue Prediction using Ridge Regression
+A **Flask-based Machine Learning web application** that predicts monthly app subscription revenue using **Ridge Regression**.  
+The application processes historical subscription data to provide accurate revenue forecasts.
 
-## Overview
-This project predicts monthly app subscription revenue using **Ridge Regression**, a linear regression technique with L2 regularization.  
-The model is trained on historical subscription data to provide accurate revenue forecasts while avoiding overfitting.
+---
 
-## Features
-- Reads and preprocesses the dataset  
-- Extracts time-based features (e.g., Month) from the date column  
-- Implements Ridge Regression for prediction  
-- Evaluates model performance using MAE, MSE, RMSE, and R² score
+### Overview
+This project allows users to upload subscription revenue data and view predictions through a simple web interface.  
+It uses **feature engineering** (such as extracting the month from the date) and **Ridge Regression** to make accurate predictions.
 
-## Dataset
-- **Input**: A CSV file containing historical subscription revenue data.  
-- **Required Columns**:
-  - `Date` – The date of the revenue record  
-  - `Revenue` – The subscription revenue amount for that date  
+---
 
-The dataset should be cleaned before running the model (no missing or invalid values).
+### Features
+- Predicts monthly app subscription revenue  
+- Uses **Ridge Regression** with L2 regularization to reduce overfitting  
+- Accepts dataset in CSV format  
+- Interactive **HTML/CSS frontend**  
+- Flask-powered real-time prediction  
 
-## Technologies Used
-- Python 3.x  
-- pandas  
-- numpy  
-- scikit-learn  
+---
 
-## Project Structure
+### Tech Stack
+- **Python 3.x**  
+- **Flask**  
+- **scikit-learn**  
+- **pandas**, **numpy**  
+- **HTML/CSS**  
 
-![structure](image.png)
+---
 
-## Installation
-1. Clone the repository:
+### Project Structure
 
-   git clone https://github.com/username/app-subscription-revenue.git
-   cd app-subscription-revenue
+![structure](image-1.png)
 
-2.Install dependencies:
+
+---
+
+### Installation & Setup
+
+#### 1. Clone the Repository
+
+git clone https://github.com/yourusername/app-subscription-revenue.git
+cd app-subscription-revenue
+
+#### 2. Install Dependencies
 
 pip install -r requirements.txt
-## Usage
-1.Train the Model (optional if model folder already contains a trained model):
+
+#### 3. Train the Model
 
 python model_train.py
+This will create and save the trained model file inside the model directory.
 
-2.Run the Web App:
+#### 4. Run the Web App
 
 python app.py
-
-3.Open the application in your browser at:
+Open in your browser:
 
 http://127.0.0.1:5000/
 
-4.Upload the dataset and view the prediction results.
-
-## Example Output
-- Prediction Results Page
-Displays predicted revenue and corresponding visual output.
-
-## Model Evaluation
-The Ridge Regression model is evaluated using:
-
--MAE (Mean Absolute Error)
-
--MSE (Mean Squared Error)
-
--RMSE (Root Mean Squared Error)
-
--R² Score
-
-## Screenshots
-
-## Input form
+#### Screenshots
 
 ![input](input.png)
 
-## Result page
-
 ![result](result.png)
+
+#### Use Cases
+- **Revenue forecasting for subscription-based applications**
+
+- **Data-driven business decision-making**
+
+- **Demonstration of Ridge Regression in real-world applications**
+
+#### Future Enhancements
+- **Integrate database storage for uploaded datasets**
+
+- **Add model comparison with other regression algorithms**
+
+- **Deploy online via platforms such as Heroku or Render**
