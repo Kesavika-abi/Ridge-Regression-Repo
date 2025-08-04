@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Subscription Revenue Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📱 App Subscription Revenue Predictor</h1>
+        <form action="/predict" method="POST">
+            <label>Active Users:</label>
+            <input type="number" name="active_users" step="any" required>
+
+            <label>Ad Spend ($):</label>
+            <input type="number" name="ad_spend" step="any" required>
+
+            <label>Churn Rate (%):</label>
+            <input type="number" name="churn_rate" step="any" required>
+
+            <label>In-App Revenue ($):</label>
+            <input type="number" name="in_app_revenue" step="any" required>
+
+            <button type="submit">Predict Revenue</button>
+        </form>
+    </div>
+</body>
+</html>
