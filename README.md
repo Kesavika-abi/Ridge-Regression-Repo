@@ -38,43 +38,46 @@ It uses **feature engineering** (such as extracting the month from the date) and
 
 ### Installation & Setup
 
-#### 1. Clone the Repository
+### 1. Clone the Repository
 
 git clone https://github.com/yourusername/app-subscription-revenue.git
 cd app-subscription-revenue
 
-#### 2. Install Dependencies
+### 2. Install Dependencies
 
 pip install -r requirements.txt
 
-#### 3. Train the Model
+### 3. Train the Model
 
 python model_train.py
 This will create and save the trained model file inside the model directory.
 
-#### 4. Run the Web App
+### 4. Run the Web App
 
 python app.py
 Open in your browser:
 
 http://127.0.0.1:5000/
 
-#### Screenshots
+### Screenshots
+## Input page
 
 ![input](input.png)
 
+## Result Page
+
 ![result](result.png)
 
-#### Use Cases
-- **Revenue forecasting for subscription-based applications**
+### Use Cases
+- Revenue forecasting for subscription-based applications
 
-- **Data-driven business decision-making**
+- Data-driven business decision-making
 
-- **Demonstration of Ridge Regression in real-world applications**
+- Demonstration of Ridge Regression in real-world applications
 
-#### Future Enhancements
-- **Integrate database storage for uploaded datasets**
+### Future Enhancements
+- Integrate database storage for uploaded datasets
 
-- **Add model comparison with other regression algorithms**
+- Add model comparison with other regression algorithms
 
-- **Deploy online via platforms such as Heroku or Render**
+- Deploy online via platforms such as Heroku or Render
