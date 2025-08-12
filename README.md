@@ -59,7 +59,7 @@ Open in your browser:
 
 http://127.0.0.1:5000/
 
-### Screenshots
+## Screenshots
 ## Input page
 
 ![input](input.png)
